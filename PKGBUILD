@@ -38,15 +38,16 @@ build() {
     cd "${srcdir}/${_gitname}"
     ./autogen.sh
 
-    ./configure --prefix=/usr \
-                --sysconfdir=/etc \
-                --sbindir=/usr/bin \
-                --libdir=/usr/lib \
-                --datadir=/usr/share \
+    ./configure --datadir=/usr/share \
                 --includedir=/usr/include \
-                --with-udevdir=/lib/udev \
+                --libdir=/usr/lib \
                 --libexecdir=/usr/lib/zfs \
-                --with-config=user
+                --prefix=/usr \
+                --sbindir=/usr/bin \
+                --sysconfdir=/etc \
+                --with-config=user \
+                --with-mounthelperdir=/usr/bin \
+                --with-udevdir=/lib/udev
     make
 }
 
