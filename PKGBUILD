@@ -22,7 +22,7 @@ groups=("archzfs-git")
 md5sums=('SKIP'
          '9ddb0c8a94861f929d0fa741fdc49950'
          '444b84b1579d0c06de5e6834b2db1d85'
-         '62ba32c6853c315ff231c396cf8bfdbb')
+         '44b6b42552fbfc199fb9be456e758db8')
 replaces=("zfs-utils")
 provides=("zfs-utils")
 conflicts=("zfs-utils" "zfs-utils-lts")
