@@ -2,7 +2,6 @@
 # Contributor: Jesus Alvarez <jeezusjr at gmail dot com>
 # Contributor: Kyle Fuller <inbox at kylefuller dot co dot uk>
 
-_spl_version=$(pacman -Q spl-git | awk '{print $2}')
 _kernel_version=$(pacman -Q linux | awk '{print $2}')
 _gitname="zfs"
 
@@ -11,7 +10,7 @@ pkgver=0.6.4.r165.g3b79cef_4.1.2_2
 pkgrel=1
 license=('CDDL')
 pkgdesc="Kernel module support files for the Zettabyte File System."
-depends=("spl-git=${_spl_version}" "linux=${_kernel_version}")
+depends=("spl-git" "linux=${_kernel_version}")
 makedepends=("git")
 arch=("i686" "x86_64")
 url="http://zfsonlinux.org/"
