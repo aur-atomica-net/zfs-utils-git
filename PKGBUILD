@@ -21,7 +21,7 @@ source=("${_gitname}::git+https://github.com/zfsonlinux/zfs.git"
 groups=("archzfs-git")
 md5sums=('SKIP'
          '9ddb0c8a94861f929d0fa741fdc49950'
-         '9ef4841abb85dee611828cc7e6f5c6fe'
+         '444b84b1579d0c06de5e6834b2db1d85'
          '62ba32c6853c315ff231c396cf8bfdbb')
 replaces=("zfs-utils")
 provides=("zfs-utils")
