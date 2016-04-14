@@ -2,8 +2,9 @@
 # Contributor: Jesus Alvarez <jeezusjr at gmail dot com>
 # Contributor: Kyle Fuller <inbox at kylefuller dot co dot uk>
 
-_spl_git_version=$(pacman -Q spl-git | awk '{print $2}')
-_kernel_version=$(pacman -Ql linux | grep -oE '[0-9]+\.[0-9]+\.[0-9]+-[0-9]+' | head -n1)
+_spl_git_version=$(pacman -Sys '^spl-git$' | grep spl-git | awk '{print $2}')
+_kernel_version=$(pacman -Q linux | awk '{print $2}')
+_kernel_module_version=$(pacman -Ql linux | grep -oE '[0-9]+\.[0-9]+\.[0-9]+-[0-9]+' | head -n1)
 _gitname="zfs"
 
 pkgname="zfs-utils-git"
